@@ -4,11 +4,16 @@
 
 **🇹🇷 Farklı örnekleme frekanslarında çalışan sensörleri tek bir yüksek çözünürlüklü zaman ekseninde senkronize edin ve veri toplama thread'lerini hiç bloklamadan CSV ve SQLite'a loglayın.**
 
+[![NuGet](https://img.shields.io/nuget/v/SensorSyncLogger.svg)](https://www.nuget.org/packages/SensorSyncLogger)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/semihbenerr/SensorSyncLogger/blob/main/LICENSE)
+[![GitHub](https://img.shields.io/badge/source-GitHub-181717.svg)](https://github.com/semihbenerr/SensorSyncLogger)
+
 ```bash
 dotnet add package SensorSyncLogger
 ```
 
-.NET 8 · MIT · English documentation first, Türkçe dokümantasyon aşağıda.
+.NET 8 · MIT · Source / Kaynak kod: https://github.com/semihbenerr/SensorSyncLogger
+English documentation first, Türkçe dokümantasyon aşağıda.
 
 ---
 
@@ -827,5 +832,7 @@ await hizalanmis.StopAsync();
 `FlushAsync()` ve `TryEnqueue()` eşzamanlı çağrılabilir.
 
 ---
+
+Issues, feedback and contributions / Hata bildirimi, geri bildirim ve katkılar: https://github.com/semihbenerr/SensorSyncLogger/issues
 
 MIT License © Semih Bener

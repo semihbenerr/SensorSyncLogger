@@ -11,7 +11,7 @@
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <PackageId>SensorSyncLogger</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Semih Bener</Authors>
     <Product>SensorSyncLogger</Product>
     <Title>SensorSyncLogger</Title>
@@ -19,7 +19,11 @@
     <PackageTags>sensor;data-logging;daq;time-sync;csv;sqlite;industrial;test-automation;load-cell;telemetry</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>1.0.0: Initial release - SyncClock, TimeSyncEngine (raw and aligned modes), BufferedWriter, CSV and SQLite sinks, periodic sensor sources with high-resolution timing.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/semihbenerr/SensorSyncLogger</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/semihbenerr/SensorSyncLogger.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageReleaseNotes>1.0.1: Source repository and project links (the code is now public on GitHub). No code changes.&#10;1.0.0: Initial release - SyncClock, TimeSyncEngine (raw and aligned modes), BufferedWriter, CSV and SQLite sinks, periodic sensor sources with high-resolution timing.</PackageReleaseNotes>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
