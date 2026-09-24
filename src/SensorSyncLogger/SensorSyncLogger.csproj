@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>SensorSyncLogger</RootNamespace>
+    <AssemblyName>SensorSyncLogger</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <!-- NuGet package metadata -->
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>SensorSyncLogger</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Semih Bener</Authors>
+    <Product>SensorSyncLogger</Product>
+    <Title>SensorSyncLogger</Title>
+    <Description>Synchronises multi-rate sensor streams (e.g. a 100 Hz load cell, a 10 Hz thermocouple and a 1 Hz pressure transmitter) on a common high-resolution time base and logs them to CSV and SQLite without blocking the acquisition threads. Raw and time-aligned (last known value or linear interpolation) modes, buffered batch writing, graceful shutdown and live status.</Description>
+    <PackageTags>sensor;data-logging;daq;time-sync;csv;sqlite;industrial;test-automation;load-cell;telemetry</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>1.0.0: Initial release - SyncClock, TimeSyncEngine (raw and aligned modes), BufferedWriter, CSV and SQLite sinks, periodic sensor sources with high-resolution timing.</PackageReleaseNotes>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" Link="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.31" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="SensorSyncLogger.Tests" />
+  </ItemGroup>
+
+</Project>
